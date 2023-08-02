@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+
+
+}
+
+.main {
+  display: flex;
+}
+
+
+.des {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(143, 113, 92);
+  
+}
+
+
+.hello {
+  font-size: 3em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  margin: 22px;
+  padding-top: 30px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  column-gap: 30%;
+}
+
+.button {
+  width: 250px;
+  margin: 25px;
+  font-size: 12px;
+  padding: 20px;
+  border-radius: 50px;
+  background: rgb(245, 237, 224);
+  color: black;
+  cursor: pointer;
+  box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+  -5px -5px 2px -1px rgba(255, 255, 255, 0.50);
+}
+
+.button a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.button img {
+  height: 60px;
+}
+
+.button p {
+  margin-bottom: 30px;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}
+
+.button a:hover {
+  color: white;
+}
+
+
+.image-gallery {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2px 1px;
+}
+
+.image-gallery img {
+  width: 100%;
+  cursor: pointer;
+  transition: 1s ease;
+}
+
+.image-gallery h3 {
+  border: solid 1px;
+  width: 70%;
+  margin-left: 12%;
+  border-radius: 15px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
+  box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+  -5px -5px 2px -1px rgba(255, 255, 255, 0.50);
+}
+
+.image-gallery img:focus,
+.image-gallery img:hover {
+  transform: scale (1.5);
+  z-index: 1;
+}
+
+
+.preview-project .preview h3 {
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.preview-project .preview p {
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1020px) {
+  
+  .main {
+    width: 100%;
+    display: grid;
+    
+  }
+  
+  
+  .des {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(143, 113, 92);
+    
+  }
+  
+  
+  
+  .hello {
+    font-size: 3em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    margin: 22px;
+    padding-top: 30px;
+  }
+}
+
+
+.image-gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2px 1px;
+}
+
+.image-gallery img {
+  width: 100%;
+  cursor: pointer;
+  transition: 1s ease;
+  
+}
+
+@media screen and (max-width: 1030px) {
+
+    .button {
+      display: none;
+      width: 250px;
+      margin: 25px;
+      font-size: 12px;
+      padding: 20px;
+      border-radius: 50px;
+      background: rgb(245, 237, 224);
+      color: black;
+      cursor: pointer;
+      box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16),
+      -5px -5px 2px -1px rgba(255, 255, 255, 0.50);
+    }
+}
+
